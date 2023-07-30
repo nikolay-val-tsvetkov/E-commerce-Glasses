@@ -25,7 +25,7 @@ export default function Header() {
             ({ title, link }) =>
               title &&
               link && (
-                <li key={link} className='p-6'>
+                <li key={title} className='p-6'>
                   <Link href={link}>{title}</Link>
                 </li>
               )

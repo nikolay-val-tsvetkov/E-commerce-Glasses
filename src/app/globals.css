@@ -34,3 +34,11 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-mid-rgb)), rgb(var(--background-end-rgb)));
 }
+
+.pastel-green {
+  background-color: #c7f3e7;
+}
+
+.pastel-pink {
+  background-color: #f9d8e8;
+}

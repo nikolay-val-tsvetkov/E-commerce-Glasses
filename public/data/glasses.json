@@ -11,7 +11,7 @@
       "description": "Timeless and sophisticated black eyeglasses.",
       "price": 39.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses1.jpg"
+      "image": "https://media.istockphoto.com/id/1012522388/photo/flying-glasses.jpg"
     },
     {
       "id": 2,
@@ -31,7 +31,7 @@
       "name": "Retro Round Eyeglasses",
       "type": "eyeglasses",
       "material": "metal",
-      "brand": "RetroSpecs",
+      "brand": "SunshineStyle",
       "frameColor": "gold",
       "glassColor": "clear",
       "description": "Stylish retro round eyeglasses with gold frame.",
