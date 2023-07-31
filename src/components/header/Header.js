@@ -17,7 +17,7 @@ const menuLinks = [
 ]
 export default function Header() {
   return (
-    <div className='flex'>
+    <div className='flex bg-slate-50'>
       <Image src='/logo.jpg' alt='Glasses Logo' width='200' height='30' />
       <nav>
         <ul className='flex'>

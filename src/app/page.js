@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <GlassesContextProvider>
       <div className='grid grid-rows-12 grid-cols-7'>
-        <div className='row-span-1 sticky top-0 col-span-7 border border-3 border-slate-400'>
+        <div className='row-span-1 sticky top-0 col-span-7 border border-3 border-slate-400 z-10'>
           <Header />
         </div>
         <div className='row-span-4 col-span-2 border border-3 border-slate-400'>

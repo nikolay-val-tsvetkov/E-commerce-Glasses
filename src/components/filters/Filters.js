@@ -1,29 +1,41 @@
 import { useGlassesContext } from '@/app/contexts/productsContext'
-import { ChevronDownIcon } from '@heroicons/react/24/solid'
+
+const filterTags = [
+  {
+    name: 'brand',
+    options: [
+      'all',
+      'SunshineStyle',
+      'VisionPro',
+      'SunShade',
+      'GoldenEyes',
+      'PolarWrap',
+      'RetroVision',
+      'CatEyeChic',
+      'GeometricSpecs',
+      'ActiveWear',
+      'ModaSpecs'
+    ]
+  },
+  {
+    name: 'shape',
+    options: ['all', 'rectangular', 'round', 'square', 'cat-eye', 'oval', 'aviator', 'wraparound']
+  },
+  {
+    name: 'type',
+    options: ['all', 'sunglasses', 'eyeglasses']
+  },
+  {
+    name: 'material',
+    options: ['all', 'wooden', 'plastic', 'acetate', 'metal', 'polycarbonate']
+  },
+  {
+    name: 'frameColor',
+    options: ['all', 'tortoise', 'gold', 'pink', 'silver', 'black', 'brown', 'tortoise', 'green']
+  }
+]
 
 export default function Filters() {
-  const filterTags = [
-    {
-      name: 'brand',
-      options: ['All', 'SunshineStyle', 'Brand 2']
-    },
-    {
-      name: 'shape',
-      options: ['All', 'Rectangular', 'Round']
-    },
-    {
-      name: 'type',
-      options: ['All', 'Sunglasses', 'Eyeglasses']
-    },
-    {
-      name: 'material',
-      options: ['All', 'Wooden', 'Plastic']
-    },
-    {
-      name: 'frameColor',
-      options: ['All', 'tortoise', 'gold']
-    }
-  ]
   const { filter, setFilter } = useGlassesContext()
 
   const handleFilterChange = (event) => {
@@ -54,9 +66,6 @@ export default function Filters() {
                 </option>
               ))}
             </select>
-            <div className='absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none'>
-              <ChevronDownIcon className='w-4 h-4 text-gray-400' />
-            </div>
           </div>
         </label>
       ))}

@@ -8,16 +8,51 @@ export const useGlassesContext = () => {
   return useContext(GlassesContext)
 }
 
+const initialStatteFilterTags = [
+  {
+    name: 'brand',
+    options: [
+      'all',
+      'SunshineStyle',
+      'VisionPro',
+      'SunShade',
+      'GoldenEyes',
+      'PolarWrap',
+      'RetroVision',
+      'CatEyeChic',
+      'GeometricSpecs',
+      'ActiveWear',
+      'ModaSpecs'
+    ]
+  },
+  {
+    name: 'shape',
+    options: ['all', 'rectangular', 'round', 'square', 'cat-eye', 'oval', 'aviator', 'wraparound']
+  },
+  {
+    name: 'type',
+    options: ['all', 'sunglasses', 'eyeglasses']
+  },
+  {
+    name: 'material',
+    options: ['all', 'wooden', 'plastic', 'acetate', 'metal', 'polycarbonate']
+  },
+  {
+    name: 'frameColor',
+    options: ['all', 'tortoise', 'gold', 'pink', 'silver', 'black', 'brown', 'tortoise', 'green']
+  }
+]
+
 const GlassesContextProvider = ({ children }) => {
   const [glassesData, setGlassesData] = useState([])
   const [filter, setFilter] = useState({
     brand: 'all',
     color: 'all',
-    price: 'all',
     shape: 'all',
     material: 'all',
     frameColor: 'all'
   })
+  const [filterTags, setFilterTags] = useState(initialStatteFilterTags)
   const [sort, setSort] = useState('default')
 
   useEffect(() => {
@@ -35,12 +70,63 @@ const GlassesContextProvider = ({ children }) => {
         }
       }
 
+      const generateFilterTags = () => {
+        const availableOptions = {
+          brand: new Set(),
+          shape: new Set(),
+          type: new Set(),
+          material: new Set(),
+          frameColor: new Set()
+        }
+
+        filteredData.forEach((item) => {
+          availableOptions.brand.add(item.brand)
+          availableOptions.shape.add(item.shape)
+          availableOptions.type.add(item.type)
+          availableOptions.material.add(item.material)
+          availableOptions.frameColor.add(item.frameColor)
+        })
+
+        const filterTags = [
+          {
+            name: 'brand',
+            options: ['All', ...Array.from(availableOptions.brand)]
+          },
+          {
+            name: 'shape',
+            options: ['All', ...Array.from(availableOptions.shape)]
+          },
+          {
+            name: 'type',
+            options: ['All', ...Array.from(availableOptions.type)]
+          },
+          {
+            name: 'material',
+            options: ['All', ...Array.from(availableOptions.material)]
+          },
+          {
+            name: 'frameColor',
+            options: ['All', ...Array.from(availableOptions.frameColor)]
+          }
+        ]
+
+        return filterTags
+      }
+
+      setFilterTags(generateFilterTags())
       const initialData = filteredData.slice(0, 12)
       setGlassesData(initialData)
     }
 
     applyFilter()
   }, [filter])
+
+  const handleResetFilter = (filterName) => {
+    setFilter((prevFilter) => ({
+      ...prevFilter,
+      [filterName]: initialStatteFilterTags[filterName]
+    }))
+  }
 
   const loadMoreItems = () => {
     const currentLength = glassesData.length
@@ -58,7 +144,9 @@ const GlassesContextProvider = ({ children }) => {
         glassesData,
         setGlassesData,
         filter,
+        filterTags,
         setFilter,
+        handleResetFilter,
         sort,
         setSort,
         loadMoreItems
