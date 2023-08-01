@@ -1,5 +1,7 @@
 import { useGlassesContext } from '@/app/contexts/productsContext'
 
+import PriceRangeSlider from './PriceSlider'
+
 const filterTags = [
   {
     name: 'brand',
@@ -27,11 +29,11 @@ const filterTags = [
   },
   {
     name: 'material',
-    options: ['all', 'wooden', 'plastic', 'acetate', 'metal', 'polycarbonate']
+    options: ['all', 'plastic', 'acetate', 'metal', 'polycarbonate']
   },
   {
     name: 'frameColor',
-    options: ['all', 'tortoise', 'gold', 'pink', 'silver', 'black', 'brown', 'tortoise', 'green']
+    options: ['all', 'gold', 'pink', 'silver', 'black', 'brown', 'green']
   }
 ]
 
@@ -50,8 +52,8 @@ export default function Filters() {
 
   return (
     <div>
-      {filterTags.map((tag) => (
-        <label key={tag.name} className='block text-sm font-medium text-gray-700'>
+      {filterTags.map((tag, index) => (
+        <label key={'label-' + tag.name + '-' + index} className='block text-sm font-medium text-gray-700'>
           {tag.name}:
           <div className='relative mt-1'>
             <select
@@ -60,8 +62,8 @@ export default function Filters() {
               onChange={handleFilterChange}
               className='block w-full px-3 py-2 pr-8 mt-1 text-gray-900 bg-white border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500 sm:text-sm'
             >
-              {tag.options.map((option) => (
-                <option key={option} value={option}>
+              {tag.options.map((option, indexOption) => (
+                <option key={'option-' + tag.name + '-' + indexOption} value={option}>
                   {option}
                 </option>
               ))}
@@ -69,6 +71,8 @@ export default function Filters() {
           </div>
         </label>
       ))}
+      <br />
+      <PriceRangeSlider />
     </div>
   )
 }

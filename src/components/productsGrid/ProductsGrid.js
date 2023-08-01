@@ -7,7 +7,7 @@ export default function ProductsGrid() {
   return (
     <div className='flex flex-wrap'>
       {glassesData.map((item, index) => (
-        <ShowCardItem key={item.id} itemData={item} index={index} />
+        <ShowCardItem key={'product-' + item.id + '-' + index} itemData={item} index={index} />
       ))}
     </div>
   )

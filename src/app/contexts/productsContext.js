@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { createContext, useContext } from 'react'
+import _ from 'lodash'
 import glasses from 'public/data/glasses.json'
 
 const GlassesContext = createContext()
@@ -44,6 +45,8 @@ const initialStatteFilterTags = [
 ]
 
 const GlassesContextProvider = ({ children }) => {
+  const [minPrice, setMinPrice] = useState(0)
+  const [maxPrice, setMaxPrice] = useState(4000)
   const [glassesData, setGlassesData] = useState([])
   const [filter, setFilter] = useState({
     brand: 'all',
@@ -69,7 +72,7 @@ const GlassesContextProvider = ({ children }) => {
           filteredData = filteredData.filter((item) => item[filterCategory] === filter[filterCategory])
         }
       }
-
+      filteredData = filteredData.filter((item) => item.price >= Number(minPrice) && item.price <= Number(maxPrice))
       const generateFilterTags = () => {
         const availableOptions = {
           brand: new Set(),
@@ -118,8 +121,9 @@ const GlassesContextProvider = ({ children }) => {
       setGlassesData(initialData)
     }
 
-    applyFilter()
-  }, [filter])
+    const debouncedApplyFilter = _.debounce(applyFilter, 300)
+    debouncedApplyFilter()
+  }, [filter, maxPrice, minPrice])
 
   const handleResetFilter = (filterName) => {
     setFilter((prevFilter) => ({
@@ -149,7 +153,11 @@ const GlassesContextProvider = ({ children }) => {
         handleResetFilter,
         sort,
         setSort,
-        loadMoreItems
+        loadMoreItems,
+        minPrice,
+        maxPrice,
+        setMinPrice,
+        setMaxPrice
       }}
     >
       {children}

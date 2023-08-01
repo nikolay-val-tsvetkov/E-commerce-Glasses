@@ -19,10 +19,10 @@ export default function Home() {
         <div className='row-span-3 col-span-5  border border-3 border-slate-400'>
           <ProductsGrid />
         </div>
-        <div className='row-span-1 col-span-7  border border-3 border-slate-400'>
+        <div className='flex justify-center row-span-1 col-span-7  border border-3 border-slate-400 '>
           <button>Load More</button>
         </div>
-        <div className='row-span-1 col-span-7 border border-3 border-slate-400'>Footer Footer</div>
+        <div className=' flex justify-center row-span-1 col-span-7 border border-3 border-slate-400'>glasses.usa2019</div>
       </div>
     </GlassesContextProvider>
   )

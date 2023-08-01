@@ -178,7 +178,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
-      "price": 44.99,
+      "price": 144.99,
       "shape": "square",
       "image": "https://example.com/sunglasses7.jpg"
     },
@@ -191,7 +191,7 @@
       "frameColor": "brown",
       "glassColor": "clear",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
-      "price": 40.99,
+      "price": 240.99,
       "shape": "round",
       "image": "https://example.com/eyeglasses8.jpg"
     },
@@ -204,7 +204,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
-      "price": 52.99,
+      "price": 552.99,
       "shape": "cat-eye",
       "image": "https://example.com/sunglasses8.jpg"
     },
@@ -386,7 +386,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
-      "price": 52.99,
+      "price": 2052.99,
       "shape": "cat-eye",
       "image": "https://example.com/sunglasses15.jpg"
     },
@@ -464,7 +464,7 @@
       "frameColor": "silver",
       "glassColor": "grey",
       "description": "Polarized aviator sunglasses with grey lenses.",
-      "price": 56.99,
+      "price": 3956.99,
       "shape": "aviator",
       "image": "https://example.com/sunglasses18.jpg"
     },
@@ -672,7 +672,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
-      "price": 34.99,
+      "price": 434.99,
       "shape": "wraparound",
       "image": "https://example.com/sunglasses26.jpg"
     },
@@ -685,7 +685,7 @@
       "frameColor": "black",
       "glassColor": "clear",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
-      "price": 41.99,
+      "price": 241.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses27.jpg"
     },
@@ -815,7 +815,7 @@
       "frameColor": "brown",
       "glassColor": "clear",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
-      "price": 38.99,
+      "price": 738.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses32.jpg"
     },
@@ -867,7 +867,7 @@
       "frameColor": "transparent",
       "glassColor": "clear",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
-      "price": 41.99,
+      "price": 141.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses34.jpg"
     },
@@ -893,7 +893,7 @@
       "frameColor": "gold",
       "glassColor": "clear",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
-      "price": 47.99,
+      "price": 947.99,
       "shape": "round",
       "image": "https://example.com/eyeglasses35.jpg"
     },
@@ -945,7 +945,7 @@
       "frameColor": "silver",
       "glassColor": "clear",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
-      "price": 43.99,
+      "price": 843.99,
       "shape": "geometric",
       "image": "https://example.com/eyeglasses37.jpg"
     },
@@ -958,7 +958,7 @@
       "frameColor": "black",
       "glassColor": "blue",
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
-      "price": 46.99,
+      "price": 746.99,
       "shape": "rectangular",
       "image": "https://example.com/sunglasses37.jpg"
     },
@@ -971,7 +971,7 @@
       "frameColor": "pink",
       "glassColor": "clear",
       "description": "Trendy transparent pink-framed eyeglasses.",
-      "price": 39.99,
+      "price": 639.99,
       "shape": "square",
       "image": "https://example.com/eyeglasses38.jpg"
     },
@@ -984,7 +984,7 @@
       "frameColor": "gold",
       "glassColor": "brown",
       "description": "Retro round sunglasses with gold frame and brown lenses.",
-      "price": 49.99,
+      "price": 349.99,
       "shape": "round",
       "image": "https://example.com/sunglasses38.jpg"
     },
