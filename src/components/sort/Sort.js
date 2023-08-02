@@ -31,8 +31,6 @@ const SortDropdown = () => {
   }
 
   const handleSortOptionClick = (option) => {
-    console.log(option)
-
     handleSort(option)
     if (option !== sortOption) {
       setSortOption(option)

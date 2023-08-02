@@ -42,7 +42,6 @@ export default function Filters() {
 
   const handleFilterChange = (event) => {
     const { name, value } = event.target
-    console.log(name, value)
 
     setFilter((prevFilter) => ({
       ...prevFilter,
