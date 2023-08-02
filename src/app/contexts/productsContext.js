@@ -43,11 +43,13 @@ const initialStatteFilterTags = [
     options: ['all', 'tortoise', 'gold', 'pink', 'silver', 'black', 'brown', 'tortoise', 'green']
   }
 ]
+const initialGridItemsRendered = 4
 
 const GlassesContextProvider = ({ children }) => {
   const [minPrice, setMinPrice] = useState(0)
   const [maxPrice, setMaxPrice] = useState(4000)
   const [glassesData, setGlassesData] = useState([])
+
   const [filter, setFilter] = useState({
     brand: 'all',
     color: 'all',
@@ -57,9 +59,10 @@ const GlassesContextProvider = ({ children }) => {
   })
   const [filterTags, setFilterTags] = useState(initialStatteFilterTags)
   const [sort, setSort] = useState('default')
+  const [hasMoreItems, setHasMoreItems] = useState(true)
 
   useEffect(() => {
-    const initialData = glasses.glasses.slice(0, 12)
+    const initialData = glasses.glasses.slice(0, initialGridItemsRendered)
     setGlassesData(initialData)
   }, [])
 
@@ -93,23 +96,23 @@ const GlassesContextProvider = ({ children }) => {
         const filterTags = [
           {
             name: 'brand',
-            options: ['All', ...Array.from(availableOptions.brand)]
+            options: ['all', ...Array.from(availableOptions.brand)]
           },
           {
             name: 'shape',
-            options: ['All', ...Array.from(availableOptions.shape)]
+            options: ['all', ...Array.from(availableOptions.shape)]
           },
           {
             name: 'type',
-            options: ['All', ...Array.from(availableOptions.type)]
+            options: ['all', ...Array.from(availableOptions.type)]
           },
           {
             name: 'material',
-            options: ['All', ...Array.from(availableOptions.material)]
+            options: ['all', ...Array.from(availableOptions.material)]
           },
           {
             name: 'frameColor',
-            options: ['All', ...Array.from(availableOptions.frameColor)]
+            options: ['all', ...Array.from(availableOptions.frameColor)]
           }
         ]
 
@@ -117,13 +120,27 @@ const GlassesContextProvider = ({ children }) => {
       }
 
       setFilterTags(generateFilterTags())
-      const initialData = filteredData.slice(0, 12)
+      const initialData = filteredData.slice(0, initialGridItemsRendered)
       setGlassesData(initialData)
     }
 
     const debouncedApplyFilter = _.debounce(applyFilter, 300)
     debouncedApplyFilter()
   }, [filter, maxPrice, minPrice])
+
+  const handleSort = (sortOption) => {
+    const sortFunctions = {
+      price_asc: (a, b) => a.price - b.price,
+      price_desc: (a, b) => b.price - a.price,
+      name_asc: (a, b) => a.name.localeCompare(b.name),
+      name_desc: (a, b) => b.name.localeCompare(a.name)
+    }
+
+    const sortFunction = sortFunctions[sortOption]
+    const sortedGlasses = sortFunction ? [...glassesData].sort(sortFunction) : [...glassesData]
+
+    setGlassesData(sortedGlasses)
+  }
 
   const handleResetFilter = (filterName) => {
     setFilter((prevFilter) => ({
@@ -133,12 +150,15 @@ const GlassesContextProvider = ({ children }) => {
   }
 
   const loadMoreItems = () => {
-    const currentLength = glassesData.length
-    const newData = glasses.slice(currentLength, currentLength + 12)
-    if (newData.length === 0) {
-      console.log('No more items to load.')
-      return
+    const currentItemsCount = glassesData.length
+    const startIndex = currentItemsCount
+    const endIndex = startIndex + initialGridItemsRendered
+    const newData = glasses.glasses.slice(startIndex, endIndex)
+
+    if (newData.length < initialGridItemsRendered) {
+      setHasMoreItems(false)
     }
+
     setGlassesData((prevData) => [...prevData, ...newData])
   }
 
@@ -157,7 +177,10 @@ const GlassesContextProvider = ({ children }) => {
         minPrice,
         maxPrice,
         setMinPrice,
-        setMaxPrice
+        setMaxPrice,
+        handleSort,
+        hasMoreItems,
+        initialGridItemsRendered
       }}
     >
       {children}

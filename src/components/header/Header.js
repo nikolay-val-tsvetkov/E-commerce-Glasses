@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { heartIcon } from '../../../public/data/icons'
 
 const menuLinks = [
   {
@@ -12,6 +13,10 @@ const menuLinks = [
   },
   {
     title: 'Promotions',
+    link: '/'
+  },
+  {
+    title: heartIcon,
     link: '/'
   }
 ]

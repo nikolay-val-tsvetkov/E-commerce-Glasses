@@ -53,9 +53,9 @@ export default function Filters() {
   return (
     <div>
       {filterTags.map((tag, index) => (
-        <label key={'label-' + tag.name + '-' + index} className='block text-sm font-medium text-gray-700'>
+        <label key={'label-' + tag.name + '-' + index} className='block text-sm font-medium text-gray-700 ml-2'>
           {tag.name}:
-          <div className='relative mt-1'>
+          <div className='relative my-2 mx-2'>
             <select
               name={tag.name}
               value={filter[tag.name]}

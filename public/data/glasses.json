@@ -7,11 +7,12 @@
       "material": "plastic",
       "brand": "VisionPro",
       "frameColor": "black",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless and sophisticated black eyeglasses.",
       "price": 39.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses1.jpg"
+      "image": "https://example.com/eyeglasses1.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "description": "Fashionable tortoise sunglasses with brown tinted lenses.",
       "price": 49.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses1.jpg"
+      "image": "https://example.com/sunglasses1.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 3,
@@ -33,11 +35,12 @@
       "material": "metal",
       "brand": "RetroVision",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Stylish retro round eyeglasses with gold frame.",
       "price": 45.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses2.jpg"
+      "image": "https://example.com/eyeglasses2.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
       "price": 34.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses2.jpg"
+      "image": "https://example.com/sunglasses2.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 5,
@@ -59,11 +63,12 @@
       "material": "plastic",
       "brand": "ModaSpecs",
       "frameColor": "blue",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
       "price": 38.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses3.jpg"
+      "image": "https://example.com/eyeglasses3.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "description": "Classic aviator sunglasses with green lenses.",
       "price": 56.99,
       "shape": "square",
-      "image": "https://example.com/sunglasses3.jpg"
+      "image": "https://example.com/sunglasses3.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 7,
@@ -85,11 +91,12 @@
       "material": "acetate",
       "brand": "EleganceSpecs",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Chic cat-eye eyeglasses with purple frame.",
       "price": 42.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses4.jpg"
+      "image": "https://example.com/eyeglasses4.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "description": "Vintage-inspired round sunglasses with pink lenses.",
       "price": 48.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses4.jpg"
+      "image": "https://example.com/sunglasses4.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 9,
@@ -110,12 +118,13 @@
       "type": "eyeglasses",
       "material": "plastic",
       "brand": "RetroVision",
-      "frameColor": "clear",
+      "frameColor": "orange",
       "glassColor": "gold",
       "description": "Fashionable clear-framed eyeglasses with transparent lenses.",
       "price": 35.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses5.jpg"
+      "image": "https://example.com/eyeglasses5.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "description": "Polarized sunglasses for ultimate glare protection.",
       "price": 39.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses5.jpg"
+      "image": "https://example.com/sunglasses5.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 11,
@@ -137,11 +147,12 @@
       "material": "acetate",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
       "price": 41.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses6.jpg"
+      "image": "https://example.com/eyeglasses6.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 12,
@@ -154,7 +165,8 @@
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
       "shape": "square",
-      "image": "https://example.com/sunglasses6.jpg"
+      "image": "https://example.com/sunglasses6.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 13,
@@ -163,11 +175,12 @@
       "material": "metal",
       "brand": "GoldenEyes",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 47.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses7.jpg"
+      "image": "/Glasses_black.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 14,
@@ -180,7 +193,8 @@
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 144.99,
       "shape": "square",
-      "image": "https://example.com/sunglasses7.jpg"
+      "image": "/Glasses_black.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 15,
@@ -189,11 +203,12 @@
       "material": "acetate",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
       "price": 240.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses8.jpg"
+      "image": "https://example.com/eyeglasses8.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 16,
@@ -206,7 +221,8 @@
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 552.99,
       "shape": "cat-eye",
-      "image": "https://example.com/sunglasses8.jpg"
+      "image": "https://example.com/sunglasses8.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 17,
@@ -215,11 +231,12 @@
       "material": "metal",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 43.99,
       "shape": "cat-eye",
-      "image": "https://example.com/eyeglasses9.jpg"
+      "image": "https://example.com/eyeglasses9.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 18,
@@ -232,7 +249,8 @@
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
       "price": 46.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses9.jpg"
+      "image": "https://example.com/sunglasses9.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 19,
@@ -241,11 +259,12 @@
       "material": "acetate",
       "brand": "PinkSpecs",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 39.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses10.jpg"
+      "image": "https://example.com/eyeglasses10.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 20,
@@ -258,7 +277,8 @@
       "description": "Retro round sunglasses with gold frame and brown lenses.",
       "price": 49.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses10.jpg"
+      "image": "https://example.com/sunglasses10.jpg",
+      "imageSrc": "/sunglassess.jpg"
     },
     {
       "id": 21,
@@ -267,11 +287,12 @@
       "material": "plastic",
       "brand": "BrownSpecs",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 38.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses11.jpg"
+      "image": "https://example.com/eyeglasses11.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 22,
@@ -284,7 +305,8 @@
       "description": "Polarized aviator sunglasses with grey lenses.",
       "price": 56.99,
       "shape": "aviator",
-      "image": "https://example.com/sunglasses11.jpg"
+      "image": "https://example.com/sunglasses11.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 23,
@@ -293,11 +315,12 @@
       "material": "plastic",
       "brand": "ModaSpecs",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
       "price": 38.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses12.jpg"
+      "image": "https://example.com/eyeglasses12.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 24,
@@ -310,7 +333,8 @@
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
       "price": 34.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses12.jpg"
+      "image": "https://example.com/sunglasses12.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 25,
@@ -319,11 +343,12 @@
       "material": "acetate",
       "brand": "VisionPro",
       "frameColor": "transparent",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
       "price": 41.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses13.jpg"
+      "image": "https://example.com/eyeglasses13.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 26,
@@ -336,7 +361,8 @@
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
       "shape": "square",
-      "image": "https://example.com/sunglasses13.jpg"
+      "image": "https://example.com/sunglasses13.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 27,
@@ -345,11 +371,12 @@
       "material": "metal",
       "brand": "GoldenEyes",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 47.99,
       "shape": "round",
-      "image": "https://example.com"
+      "image": "https://example.com",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 28,
@@ -362,7 +389,8 @@
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 44.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses14.jpg"
+      "image": "https://example.com/sunglasses14.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 29,
@@ -371,11 +399,12 @@
       "material": "acetate",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
       "price": 40.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses15.jpg"
+      "image": "https://example.com/eyeglasses15.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 30,
@@ -388,7 +417,8 @@
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 2052.99,
       "shape": "cat-eye",
-      "image": "https://example.com/sunglasses15.jpg"
+      "image": "https://example.com/sunglasses15.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 31,
@@ -397,11 +427,12 @@
       "material": "metal",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 43.99,
       "shape": "rectangular",
-      "image": "https://example.com/eyeglasses16.jpg"
+      "image": "https://example.com/eyeglasses16.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 32,
@@ -414,7 +445,8 @@
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
       "price": 46.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses16.jpg"
+      "image": "https://example.com/sunglasses16.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 33,
@@ -423,11 +455,12 @@
       "material": "acetate",
       "brand": "PinkSpecs",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 39.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses17.jpg"
+      "image": "https://example.com/eyeglasses17.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 34,
@@ -440,7 +473,8 @@
       "description": "Retro round sunglasses with gold frame and brown lenses.",
       "price": 49.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses17.jpg"
+      "image": "https://example.com/sunglasses17.jpg",
+      "imageSrc": "/sunglassess.jpg"
     },
     {
       "id": 35,
@@ -449,11 +483,12 @@
       "material": "plastic",
       "brand": "olarWrap",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 38.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses18.jpg"
+      "image": "https://example.com/eyeglasses18.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 36,
@@ -466,7 +501,8 @@
       "description": "Polarized aviator sunglasses with grey lenses.",
       "price": 3956.99,
       "shape": "aviator",
-      "image": "https://example.com/sunglasses18.jpg"
+      "image": "https://example.com/sunglasses18.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 37,
@@ -475,11 +511,12 @@
       "material": "plastic",
       "brand": "ModaSpecs",
       "frameColor": "orange",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
       "price": 38.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses19.jpg"
+      "image": "https://example.com/eyeglasses19.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 38,
@@ -492,7 +529,8 @@
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
       "price": 34.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses19.jpg"
+      "image": "https://example.com/sunglasses19.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 39,
@@ -501,11 +539,12 @@
       "material": "acetate",
       "brand": "SeeThrough",
       "frameColor": "transparent",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
       "price": 41.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses20.jpg"
+      "image": "https://example.com/eyeglasses20.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 40,
@@ -518,7 +557,8 @@
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses20.jpg"
+      "image": "https://example.com/sunglasses20.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 41,
@@ -527,11 +567,12 @@
       "material": "metal",
       "brand": "GoldenEyes",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 47.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses21.jpg"
+      "image": "https://example.com/eyeglasses21.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 42,
@@ -544,7 +585,8 @@
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 44.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses21.jpg"
+      "image": "https://example.com/sunglasses21.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 43,
@@ -553,11 +595,12 @@
       "material": "acetate",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
       "price": 40.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses22.jpg"
+      "image": "https://example.com/eyeglasses22.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 44,
@@ -570,7 +613,8 @@
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 52.99,
       "shape": "cat-eye",
-      "image": "https://example.com/sunglasses22.jpg"
+      "image": "https://example.com/sunglasses22.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 45,
@@ -579,11 +623,12 @@
       "material": "metal",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 43.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses23.jpg"
+      "image": "https://example.com/eyeglasses23.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 46,
@@ -596,7 +641,8 @@
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
       "price": 46.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses23.jpg"
+      "image": "https://example.com/sunglasses23.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 47,
@@ -605,11 +651,12 @@
       "material": "acetate",
       "brand": "ActiveWear",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 39.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses24.jpg"
+      "image": "https://example.com/eyeglasses24.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 48,
@@ -622,7 +669,8 @@
       "description": "Retro round sunglasses with gold frame and brown lenses.",
       "price": 49.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses24.jpg"
+      "image": "https://example.com/sunglasses24.jpg",
+      "imageSrc": "/sunglassess.jpg"
     },
     {
       "id": 49,
@@ -631,11 +679,12 @@
       "material": "plastic",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 38.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses25.jpg"
+      "image": "https://example.com/eyeglasses25.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 50,
@@ -648,7 +697,8 @@
       "description": "Polarized aviator sunglasses with grey lenses.",
       "price": 56.99,
       "shape": "aviator",
-      "image": "https://example.com/sunglasses25.jpg"
+      "image": "https://example.com/sunglasses25.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 51,
@@ -657,11 +707,12 @@
       "material": "plastic",
       "brand": "ModaSpecs",
       "frameColor": "lightblue",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
       "price": 38.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses26.jpg"
+      "image": "https://example.com/eyeglasses26.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 52,
@@ -674,7 +725,8 @@
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
       "price": 434.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses26.jpg"
+      "image": "https://example.com/sunglasses26.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 53,
@@ -683,11 +735,12 @@
       "material": "acetate",
       "brand": "ModaSpecs",
       "frameColor": "black",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
       "price": 241.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses27.jpg"
+      "image": "https://example.com/eyeglasses27.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 54,
@@ -700,7 +753,8 @@
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses27.jpg"
+      "image": "https://example.com/sunglasses27.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 55,
@@ -709,11 +763,12 @@
       "material": "metal",
       "brand": "GoldenEyes",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 47.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses28.jpg"
+      "image": "https://example.com/eyeglasses28.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 56,
@@ -726,7 +781,8 @@
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 44.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses28.jpg"
+      "image": "https://example.com/sunglasses28.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 57,
@@ -735,11 +791,12 @@
       "material": "acetate",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
       "price": 40.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses29.jpg"
+      "image": "https://example.com/eyeglasses29.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 58,
@@ -752,7 +809,8 @@
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 52.99,
       "shape": "cat-eye",
-      "image": "https://example.com/sunglasses29.jpg"
+      "image": "https://example.com/sunglasses29.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 59,
@@ -761,11 +819,12 @@
       "material": "metal",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 43.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses30.jpg"
+      "image": "https://example.com/eyeglasses30.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 60,
@@ -778,7 +837,8 @@
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
       "price": 46.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses30.jpg"
+      "image": "https://example.com/sunglasses30.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 61,
@@ -787,11 +847,12 @@
       "material": "acetate",
       "brand": "PinkSpecs",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 39.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses31.jpg"
+      "image": "https://example.com/eyeglasses31.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 62,
@@ -804,7 +865,8 @@
       "description": "Retro round sunglasses with gold frame and brown lenses.",
       "price": 49.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses31.jpg"
+      "image": "https://example.com/sunglasses31.jpg",
+      "imageSrc": "/sunglassess.jpg"
     },
     {
       "id": 63,
@@ -813,11 +875,12 @@
       "material": "plastic",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 738.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses32.jpg"
+      "image": "https://example.com/eyeglasses32.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 64,
@@ -830,7 +893,8 @@
       "description": "Polarized aviator sunglasses with grey lenses.",
       "price": 56.99,
       "shape": "aviator",
-      "image": "https://example.com/sunglasses32.jpg"
+      "image": "https://example.com/sunglasses32.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 65,
@@ -839,11 +903,12 @@
       "material": "plastic",
       "brand": "ModaSpecs",
       "frameColor": "plum",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
       "price": 38.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses33.jpg"
+      "image": "https://example.com/eyeglasses33.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 66,
@@ -856,7 +921,8 @@
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
       "price": 34.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses33.jpg"
+      "image": "https://example.com/sunglasses33.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 67,
@@ -865,11 +931,12 @@
       "material": "acetate",
       "brand": "ActiveWear",
       "frameColor": "transparent",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
       "price": 141.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses34.jpg"
+      "image": "https://example.com/eyeglasses34.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 68,
@@ -882,7 +949,8 @@
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses34.jpg"
+      "image": "https://example.com/sunglasses34.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 69,
@@ -891,11 +959,12 @@
       "material": "metal",
       "brand": "GoldenEyes",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 947.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses35.jpg"
+      "image": "https://example.com/eyeglasses35.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 70,
@@ -908,7 +977,8 @@
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 44.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses35.jpg"
+      "image": "https://example.com/sunglasses35.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 71,
@@ -917,11 +987,12 @@
       "material": "acetate",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
       "price": 40.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses36.jpg"
+      "image": "https://example.com/eyeglasses36.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 72,
@@ -934,7 +1005,8 @@
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 52.99,
       "shape": "cat-eye",
-      "image": "https://example.com/sunglasses36.jpg"
+      "image": "https://example.com/sunglasses36.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 73,
@@ -943,11 +1015,12 @@
       "material": "metal",
       "brand": "SunshineStyle",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 843.99,
       "shape": "geometric",
-      "image": "https://example.com/eyeglasses37.jpg"
+      "image": "https://example.com/eyeglasses37.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 74,
@@ -960,7 +1033,8 @@
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
       "price": 746.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses37.jpg"
+      "image": "https://example.com/sunglasses37.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 75,
@@ -969,11 +1043,12 @@
       "material": "acetate",
       "brand": "PolarWrap",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 639.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses38.jpg"
+      "image": "https://example.com/eyeglasses38.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 76,
@@ -986,7 +1061,8 @@
       "description": "Retro round sunglasses with gold frame and brown lenses.",
       "price": 349.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses38.jpg"
+      "image": "https://example.com/sunglasses38.jpg",
+      "imageSrc": "/sunglassess.jpg"
     },
     {
       "id": 77,
@@ -995,11 +1071,12 @@
       "material": "plastic",
       "brand": "PolarWrap",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 38.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses39.jpg"
+      "image": "https://example.com/eyeglasses39.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 78,
@@ -1012,7 +1089,8 @@
       "description": "Polarized aviator sunglasses with grey lenses.",
       "price": 56.99,
       "shape": "aviator",
-      "image": "https://example.com/sunglasses39.jpg"
+      "image": "https://example.com/sunglasses39.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 79,
@@ -1021,11 +1099,12 @@
       "material": "plastic",
       "brand": "ModaSpecs",
       "frameColor": "navy",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
       "price": 38.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses40.jpg"
+      "image": "https://example.com/eyeglasses40.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 80,
@@ -1038,7 +1117,8 @@
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
       "price": 34.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses40.jpg"
+      "image": "https://example.com/sunglasses40.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 81,
@@ -1047,11 +1127,12 @@
       "material": "acetate",
       "brand": "VisionPro",
       "frameColor": "transparent",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
       "price": 41.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses41.jpg"
+      "image": "https://example.com/eyeglasses41.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 82,
@@ -1064,7 +1145,8 @@
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses41.jpg"
+      "image": "https://example.com/sunglasses41.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 83,
@@ -1073,11 +1155,12 @@
       "material": "metal",
       "brand": "GoldenEyes",
       "frameColor": "gold",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 47.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses42.jpg"
+      "image": "https://example.com/eyeglasses42.jpg",
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 84,
@@ -1090,7 +1173,8 @@
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 44.99,
       "shape": "wraparound",
-      "image": "https://example.com/sunglasses42.jpg"
+      "image": "https://example.com/sunglasses42.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 85,
@@ -1099,11 +1183,12 @@
       "material": "acetate",
       "brand": "RetroVision",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
       "price": 40.99,
       "shape": "round",
-      "image": "https://example.com/eyeglasses43.jpg"
+      "image": "https://example.com/eyeglasses43.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 86,
@@ -1116,7 +1201,8 @@
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 52.99,
       "shape": "cat-eye",
-      "image": "https://example.com/sunglasses43.jpg"
+      "image": "https://example.com/sunglasses43.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 87,
@@ -1125,11 +1211,12 @@
       "material": "metal",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 43.99,
       "shape": "rectangular",
-      "image": "https://example.com/eyeglasses44.jpg"
+      "image": "https://example.com/eyeglasses44.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 88,
@@ -1142,7 +1229,8 @@
       "description": "Mirrored sunglasses with blue lenses for a sporty look.",
       "price": 46.99,
       "shape": "rectangular",
-      "image": "https://example.com/sunglasses44.jpg"
+      "image": "https://example.com/sunglasses44.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 89,
@@ -1151,11 +1239,12 @@
       "material": "acetate",
       "brand": "PinkSpecs",
       "frameColor": "pink",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 39.99,
       "shape": "square",
-      "image": "https://example.com/eyeglasses45.jpg"
+      "image": "https://example.com/eyeglasses45.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     },
     {
       "id": 90,
@@ -1168,7 +1257,8 @@
       "description": "Retro round sunglasses with gold frame and brown lenses.",
       "price": 49.99,
       "shape": "round",
-      "image": "https://example.com/sunglasses45.jpg"
+      "image": "https://example.com/sunglasses45.jpg",
+      "imageSrc": "/sunglassess.jpg"
     },
     {
       "id": 91,
@@ -1177,11 +1267,12 @@
       "material": "plastic",
       "brand": "VisionPro",
       "frameColor": "brown",
-      "glassColor": "clear",
+      "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 38.99,
       "shape": "oval",
-      "image": "https://example.com/eyeglasses46.jpg"
+      "image": "https://example.com/eyeglasses46.jpg",
+      "imageSrc": "/Glasses_black.jpg"
     }
   ]
 }
