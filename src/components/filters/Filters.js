@@ -50,7 +50,7 @@ export default function Filters() {
   }
 
   return (
-    <div>
+    <div className='border border-slate-50'>
       {filterTags.map((tag, index) => (
         <label key={'label-' + tag.name + '-' + index} className='block text-sm font-medium text-gray-700 ml-2'>
           {tag.name}:
@@ -59,7 +59,7 @@ export default function Filters() {
               name={tag.name}
               value={filter[tag.name]}
               onChange={handleFilterChange}
-              className='block w-full px-3 py-2 pr-8 mt-1 text-gray-900 bg-white border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500 sm:text-sm'
+              className='block w-full px-3 py-2 pr-8 my-2 text-md  text-gray-500 bg-slate-50 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-opacity-50 focus:ring-blue-500 focus:border-blue-500 sm:text-sm'
             >
               {tag.options.map((option, indexOption) => (
                 <option key={'option-' + tag.name + '-' + indexOption} value={option}>
@@ -70,7 +70,6 @@ export default function Filters() {
           </div>
         </label>
       ))}
-      <br />
       <PriceRangeSlider />
     </div>
   )

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { heartIcon } from '../../../public/data/icons'
+import { useGlassesContext } from '@/app/contexts/productsContext'
 
 const menuLinks = [
   {
@@ -14,24 +14,24 @@ const menuLinks = [
   {
     title: 'Promotions',
     link: '/'
-  },
-  {
-    title: heartIcon,
-    link: '/'
   }
 ]
 export default function Header() {
+  const { handleNavOptions } = useGlassesContext()
+
   return (
-    <div className='flex bg-slate-50'>
-      <Image src='/logo.jpg' alt='Glasses Logo' width='200' height='30' />
+    <div className='flex  bg-slate-50'>
+      <Image src='/logo.jpg' className='hidden sm:block' alt='Glasses Logo' width='200' height='30' />
       <nav>
-        <ul className='flex'>
+        <ul className='flex flex-col sm:flex-row'>
           {menuLinks.map(
             ({ title, link }) =>
               title &&
               link && (
-                <li key={title} className='p-6'>
-                  <Link href={link}>{title}</Link>
+                <li key={title} className='p-2 sm:p-6'>
+                  <Link href={link} onClick={() => handleNavOptions(title)}>
+                    {title}
+                  </Link>
                 </li>
               )
           )}

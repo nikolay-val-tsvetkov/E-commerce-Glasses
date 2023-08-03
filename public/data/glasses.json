@@ -40,7 +40,8 @@
       "price": 45.99,
       "shape": "round",
       "image": "https://example.com/eyeglasses2.jpg",
-      "imageSrc": "/golden_glasses.jpg"
+      "imageSrc": "/golden_glasses.jpg",
+      "oldPrice": 70.0
     },
     {
       "id": 4,
@@ -667,10 +668,10 @@
       "frameColor": "gold",
       "glassColor": "brown",
       "description": "Retro round sunglasses with gold frame and brown lenses.",
-      "price": 49.99,
+      "price": 3125.68,
       "shape": "round",
-      "image": "https://example.com/sunglasses24.jpg",
-      "imageSrc": "/sunglassess.jpg"
+      "image": "https://example.com/sunglasses2.jpg",
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 49,
@@ -681,7 +682,7 @@
       "frameColor": "brown",
       "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
-      "price": 38.99,
+      "price": 3008.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses25.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -695,7 +696,7 @@
       "frameColor": "silver",
       "glassColor": "grey",
       "description": "Polarized aviator sunglasses with grey lenses.",
-      "price": 56.99,
+      "price": 2156.99,
       "shape": "aviator",
       "image": "https://example.com/sunglasses25.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -709,7 +710,7 @@
       "frameColor": "lightblue",
       "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
-      "price": 38.99,
+      "price": 2938.99,
       "shape": "square",
       "image": "https://example.com/eyeglasses26.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -723,7 +724,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
-      "price": 434.99,
+      "price": 1434.99,
       "shape": "wraparound",
       "image": "https://example.com/sunglasses26.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -737,7 +738,7 @@
       "frameColor": "black",
       "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
-      "price": 241.99,
+      "price": 1241.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses27.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -751,7 +752,7 @@
       "frameColor": "black",
       "glassColor": "green",
       "description": "Iconic wayfarer sunglasses with green lenses.",
-      "price": 54.99,
+      "price": 1054.99,
       "shape": "rectangular",
       "image": "https://example.com/sunglasses27.jpg",
       "imageSrc": "/sunglasses2.jpg"

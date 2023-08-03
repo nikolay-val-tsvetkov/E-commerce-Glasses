@@ -32,6 +32,7 @@ body {
   --background-end-rgb: 204, 255, 204;
 
   color: rgb(var(--foreground-rgb));
+  height: 400vh;
   background: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-mid-rgb)), rgb(var(--background-end-rgb)));
 }
 
@@ -41,4 +42,18 @@ body {
 
 .pastel-pink {
   background-color: #f9d8e8;
+}
+
+.wrap {
+  background: linear-gradient(0deg, var(--tcol) var(--th), transparent 0);
+
+  width: 90% !important;
+}
+
+.wrap #a {
+  background-color: #c7f3e7;
+}
+
+input[type='range']::-moz-range-thumb {
+  background-color: #c7f3e7 !important;
 }

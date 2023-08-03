@@ -1,49 +1,32 @@
 import React from 'react'
 import { useGlassesContext } from '@/app/contexts/productsContext'
+import { RangeSlider } from 'next-range-slider'
 
 const PriceSlider = () => {
   const { minPrice, maxPrice, setMinPrice, setMaxPrice } = useGlassesContext()
 
-  const handleMinPriceChange = (event) => {
-    setMinPrice(event.target.value)
-  }
-
-  const handleMaxPriceChange = (event) => {
-    setMaxPrice(event.target.value)
-  }
-
   return (
-    <div className='flex items-center'>
-      <div className='w-1/2'>
-        <label htmlFor='minPrice' className='block text-sm font-medium text-gray-700'>
-          Min Price {minPrice}
-        </label>
-        <input
-          type='range'
-          id='minPrice'
-          name='minPrice'
-          min='0'
-          max='1499'
-          value={minPrice}
-          onChange={handleMinPriceChange}
-          className='w-full h-2 bg-gray-300 rounded-full appearance-none'
-        />
+    <div>
+      <div className='flex justify-between mx-4'>
+        <div>{minPrice}</div>
+        <div>{maxPrice}</div>
       </div>
-      <div className='w-1/2'>
-        <label htmlFor='maxPrice' className='block text-sm font-medium text-gray-700'>
-          Max Price {maxPrice}
-        </label>
-        <input
-          type='range'
-          id='maxPrice'
-          name='maxPrice'
-          min='1500'
-          max='3999'
-          value={maxPrice}
-          onChange={handleMaxPriceChange}
-          className='w-full h-2 bg-gray-300 rounded-full appearance-none'
-        />
-      </div>
+
+      <RangeSlider
+        min={10}
+        max={3999}
+        step={100}
+        options={{
+          leftInputProps: {
+            value: minPrice,
+            onChange: (e) => setMinPrice(Number(e.target.value))
+          },
+          rightInputProps: {
+            value: maxPrice,
+            onChange: (e) => setMaxPrice(Number(e.target.value))
+          }
+        }}
+      />
     </div>
   )
 }

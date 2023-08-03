@@ -43,12 +43,14 @@ const initialStatteFilterTags = [
     options: ['all', 'tortoise', 'gold', 'pink', 'silver', 'black', 'brown', 'tortoise', 'green']
   }
 ]
-const initialGridItemsRendered = 4
+const initialGridItemsRendered = 12
 
 const GlassesContextProvider = ({ children }) => {
   const [minPrice, setMinPrice] = useState(0)
   const [maxPrice, setMaxPrice] = useState(4000)
   const [glassesData, setGlassesData] = useState([])
+  const [currentCategoryItemsCounter, setcurrentCategoryItemsCounter] = useState(0)
+  const [currentCategory, setCurrentCategory] = useState('')
 
   const [filter, setFilter] = useState({
     brand: 'all',
@@ -161,6 +163,32 @@ const GlassesContextProvider = ({ children }) => {
 
     setGlassesData((prevData) => [...prevData, ...newData])
   }
+  const handleNavOptions = (option) => {
+    let filteredGlasses = []
+    if (option === 'Sunglasses') {
+      filteredGlasses = glassesData.filter((item) => {
+        item.type === 'sunglasses'
+      })
+      setcurrentCategoryItemsCounter(filteredGlasses.length)
+      setCurrentCategory(option)
+      setGlassesData(filteredGlasses)
+    } else if (option === 'Eyeglasses') {
+      filteredGlasses = glassesData.filter((item) => {
+        item.type === 'eyeglasses'
+      })
+      setcurrentCategoryItemsCounter(filteredGlasses.length)
+      setCurrentCategory(option)
+      setGlassesData(filteredGlasses)
+    } else if (option === 'Promotions') {
+      filteredGlasses = glassesData.filter((item) => {
+        item.oldPrice !== 0
+      })
+
+      setGlassesData(filteredGlasses)
+      setCurrentCategory(option)
+      setcurrentCategoryItemsCounter(filteredGlasses.length)
+    }
+  }
 
   return (
     <GlassesContext.Provider
@@ -180,7 +208,10 @@ const GlassesContextProvider = ({ children }) => {
         setMaxPrice,
         handleSort,
         hasMoreItems,
-        initialGridItemsRendered
+        initialGridItemsRendered,
+        handleNavOptions,
+        currentCategoryItemsCounter,
+        currentCategory
       }}
     >
       {children}

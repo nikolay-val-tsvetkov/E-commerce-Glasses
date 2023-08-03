@@ -2,7 +2,7 @@ import Image from 'next/image'
 // import { heartIcon } from '../../../public/data/icons'
 
 export default function ShowCardItem({ itemData, index }) {
-  const { name, type, shape, description, price, brand, material, frameColor, imageSrc } = itemData
+  const { name, type, shape, description, price, brand, material, frameColor, imageSrc, oldPrice } = itemData
   const tagStyles = 'inline-block bg-gray-200 rounded-full px-2 py-1 text-sm font-semibold text-gray-700 mr-2 my-2'
 
   return (
@@ -19,13 +19,16 @@ export default function ShowCardItem({ itemData, index }) {
       <h5 className='text-center text-sm md:text-xl font-bold text-white border-t-2'>{name}</h5>
       {/* {heartIcon} */}
 
-      <p className='mb-3 text-sm lg:text-lg text-gray-700 dark:text-gray-600'>{description}</p>
+      <p className='mb-3 text-sm xl:text-lg text-gray-700 dark:text-gray-600'>{description}</p>
       <div className='flex flex-col lg:flex-row md:justify-between md:items-center mt-4'>
         <div className='md:flex md:items-center'>
           <span className='text-xs md:text-sm text-gray-800'>{brand}</span>
           <span className='text-gray-500 text-xs ml-2'>{material}</span>
         </div>
-        <span className='text-gray-700 font-bold text-xs md:text-sm'>${price.toFixed(2)}</span>
+        <span className='text-gray-700 font-bold text-xs md:text-sm'>
+          {oldPrice && <span className='line-through'>{oldPrice}</span>}
+          <span> {price.toFixed(2)}</span>
+        </span>
       </div>
       <div className='mt-4 flex flex-col'>
         <div className={tagStyles}>{type}</div>
