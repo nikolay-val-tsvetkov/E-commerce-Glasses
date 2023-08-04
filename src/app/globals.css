@@ -46,8 +46,7 @@ body {
 
 .wrap {
   background: linear-gradient(0deg, var(--tcol) var(--th), transparent 0);
-
-  width: 90% !important;
+  width: 80% !important;
 }
 
 .wrap #a {

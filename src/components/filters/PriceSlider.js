@@ -14,7 +14,7 @@ const PriceSlider = () => {
 
       <RangeSlider
         min={10}
-        max={3999}
+        max={3910}
         step={100}
         options={{
           leftInputProps: {

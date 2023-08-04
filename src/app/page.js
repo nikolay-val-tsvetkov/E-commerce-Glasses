@@ -15,13 +15,13 @@ export default function Home() {
         <div className='row-span-1 sticky top-0 col-span-6 sm:col-span-7 z-10'>
           <Header />
         </div>
-        <div className='row-span-4 col-span-2  mt-4'>
+        <div className='row-span-4 col-span-2 mt-4'>
           <Filters />
         </div>
         <div className='row-span-1 col-span-3 mt-4'>
           <Category />
         </div>
-        <div className='row-span-1 col-span-2 z-20 mt-4 justify-self-end'>
+        <div className='row-span-1 col-span-2 mt-4 justify-self-end'>
           <Sort />
         </div>
         <div className='row-span-3 col-span-5'>
