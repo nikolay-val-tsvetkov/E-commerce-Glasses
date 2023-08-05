@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useGlassesContext } from '@/app/contexts/productsContext'
+import { cartIcon } from '../../../public/helpers/icons'
 
 const menuLinks = [
   {
@@ -17,11 +18,11 @@ const menuLinks = [
   }
 ]
 export default function Header() {
-  const { handleNavOptions } = useGlassesContext()
+  const { handleNavOptions, cartItems } = useGlassesContext()
 
   return (
-    <div className='flex  bg-slate-50'>
-      <Image src='/logo.jpg' className='hidden sm:block' alt='Glasses Logo' width='200' height='30' />
+    <div className='flex flex-col sm:flex-row text-xs md:text-sm bg-slate-50 justify-around'>
+      <Image src='/logo.jpg' className='hidden md:block' alt='Glasses Logo' width='200' height='30' />
       <nav>
         <ul className='flex flex-col sm:flex-row'>
           {menuLinks.map(
@@ -37,6 +38,10 @@ export default function Header() {
           )}
         </ul>
       </nav>
+      <div className='sm:mt-4 mb-2 mr-4 align-middle text-black hover:text-gray-700 relative'>
+        {cartIcon}
+        <span className='absolute top-2 left-8 text-center bg-red-200 rounded-full h-4 w-4 md:h-6 md:w-6'>{cartItems.length}</span>
+      </div>
     </div>
   )
 }

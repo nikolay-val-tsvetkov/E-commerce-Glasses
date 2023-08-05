@@ -51,6 +51,7 @@ const GlassesContextProvider = ({ children }) => {
   const [glassesData, setGlassesData] = useState([])
   const [currentCategoryItemsCounter, setcurrentCategoryItemsCounter] = useState(0)
   const [currentCategory, setCurrentCategory] = useState('')
+  const [cartItems, setCartItems] = useState([])
 
   const [filter, setFilter] = useState({
     brand: 'all',
@@ -62,6 +63,8 @@ const GlassesContextProvider = ({ children }) => {
   const [filterTags, setFilterTags] = useState(initialStatteFilterTags)
   const [sort, setSort] = useState('default')
   const [hasMoreItems, setHasMoreItems] = useState(true)
+
+  const addToCart = (item) => setCartItems((prevCartItems) => [...prevCartItems, item])
 
   useEffect(() => {
     const initialData = glasses.glasses.slice(0, initialGridItemsRendered)
@@ -166,27 +169,29 @@ const GlassesContextProvider = ({ children }) => {
   const handleNavOptions = (option) => {
     let filteredGlasses = []
     if (option === 'Sunglasses') {
-      filteredGlasses = glassesData.filter((item) => {
-        item.type === 'sunglasses'
+      filteredGlasses = glasses.glasses.filter((item) => {
+        return item.type === 'sunglasses'
       })
       setcurrentCategoryItemsCounter(filteredGlasses.length)
       setCurrentCategory(option)
       setGlassesData(filteredGlasses)
     } else if (option === 'Eyeglasses') {
-      filteredGlasses = glassesData.filter((item) => {
-        item.type === 'eyeglasses'
+      filteredGlasses = glasses.glasses.filter((item) => {
+        return item.type === 'eyeglasses'
       })
       setcurrentCategoryItemsCounter(filteredGlasses.length)
       setCurrentCategory(option)
       setGlassesData(filteredGlasses)
     } else if (option === 'Promotions') {
-      filteredGlasses = glassesData.filter((item) => {
-        item.oldPrice !== 0
+      filteredGlasses = glasses.glasses.filter((item) => {
+        return item?.discount && item
       })
 
       setGlassesData(filteredGlasses)
       setCurrentCategory(option)
       setcurrentCategoryItemsCounter(filteredGlasses.length)
+    } else {
+      return null
     }
   }
 
@@ -211,7 +216,9 @@ const GlassesContextProvider = ({ children }) => {
         initialGridItemsRendered,
         handleNavOptions,
         currentCategoryItemsCounter,
-        currentCategory
+        currentCategory,
+        cartItems,
+        addToCart
       }}
     >
       {children}

@@ -12,19 +12,19 @@ export default function Home() {
   return (
     <GlassesContextProvider>
       <div className='grid grid-rows-12 grid-cols-7 mx-8 my-2 px-8 relative w-fit-content'>
-        <div className='row-span-1 sticky top-0 col-span-6 sm:col-span-7 z-10'>
+        <div className='row-span-1 sticky top-0 col-span-7 z-20'>
           <Header />
         </div>
-        <div className='row-span-4 col-span-2 mt-4'>
+        <div className='row-span-4 col-span-7 sm:col-span-2 mt-4'>
           <Filters />
         </div>
         <div className='row-span-1 col-span-3 mt-4'>
           <Category />
         </div>
-        <div className='row-span-1 col-span-2 mt-4 justify-self-end'>
+        <div className='row-span-1 col-span-2 mt-4 justify-self-end z-10'>
           <Sort />
         </div>
-        <div className='row-span-3 col-span-5'>
+        <div className='row-span-3 col-span-7 sm:col-span-5'>
           <ProductsGrid />
         </div>
         <div className='flex justify-center row-span-1 col-span-7'>

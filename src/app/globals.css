@@ -45,14 +45,9 @@ body {
 }
 
 .wrap {
-  background: linear-gradient(0deg, var(--tcol) var(--th), transparent 0);
   width: 80% !important;
 }
 
 .wrap #a {
   background-color: #c7f3e7;
-}
-
-input[type='range']::-moz-range-thumb {
-  background-color: #c7f3e7 !important;
 }

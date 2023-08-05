@@ -10,6 +10,7 @@
       "glassColor": "orange",
       "description": "Timeless and sophisticated black eyeglasses.",
       "price": 39.99,
+      "discount": 40,
       "shape": "round",
       "image": "https://example.com/eyeglasses1.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -41,7 +42,7 @@
       "shape": "round",
       "image": "https://example.com/eyeglasses2.jpg",
       "imageSrc": "/golden_glasses.jpg",
-      "oldPrice": 70.0
+      "discount": 70
     },
     {
       "id": 4,
@@ -95,6 +96,7 @@
       "glassColor": "orange",
       "description": "Chic cat-eye eyeglasses with purple frame.",
       "price": 42.99,
+      "discount": 20,
       "shape": "round",
       "image": "https://example.com/eyeglasses4.jpg",
       "imageSrc": "/golden_glasses.jpg"
@@ -193,6 +195,7 @@
       "glassColor": "grey",
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 144.99,
+      "discount": 20,
       "shape": "square",
       "image": "/Glasses_black.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -263,6 +266,7 @@
       "glassColor": "orange",
       "description": "Trendy transparent pink-framed eyeglasses.",
       "price": 39.99,
+      "discount": 20,
       "shape": "square",
       "image": "https://example.com/eyeglasses10.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -557,6 +561,7 @@
       "glassColor": "green",
       "description": "Iconic wayfarer sunglasses with green lenses.",
       "price": 54.99,
+      "discount": 50,
       "shape": "round",
       "image": "https://example.com/sunglasses20.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -613,6 +618,7 @@
       "glassColor": "grey",
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 52.99,
+      "discount": 50,
       "shape": "cat-eye",
       "image": "https://example.com/sunglasses22.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -697,6 +703,7 @@
       "glassColor": "grey",
       "description": "Polarized aviator sunglasses with grey lenses.",
       "price": 2156.99,
+      "discount": 50,
       "shape": "aviator",
       "image": "https://example.com/sunglasses25.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -767,6 +774,7 @@
       "glassColor": "orange",
       "description": "Sophisticated gold-tone eyeglasses for a touch of luxury.",
       "price": 47.99,
+      "discount": 50,
       "shape": "round",
       "image": "https://example.com/eyeglasses28.jpg",
       "imageSrc": "/golden_glasses.jpg"
@@ -809,6 +817,7 @@
       "glassColor": "grey",
       "description": "Glamorous oversized cat-eye sunglasses with grey lenses.",
       "price": 52.99,
+      "discount": 50,
       "shape": "cat-eye",
       "image": "https://example.com/sunglasses29.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -977,6 +986,7 @@
       "glassColor": "grey",
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
       "price": 44.99,
+      "discount": 50,
       "shape": "wraparound",
       "image": "https://example.com/sunglasses35.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -1271,6 +1281,7 @@
       "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
       "price": 38.99,
+      "discount": 50,
       "shape": "oval",
       "image": "https://example.com/eyeglasses46.jpg",
       "imageSrc": "/Glasses_black.jpg"

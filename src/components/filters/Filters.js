@@ -50,7 +50,7 @@ export default function Filters() {
   }
 
   return (
-    <div className='border border-slate-50'>
+    <div className='border border-slate-50 rounded py-2 bg-slate-100/80 '>
       {filterTags.map((tag, index) => (
         <label key={'label-' + tag.name + '-' + index} className='block text-sm font-medium text-gray-700 ml-2'>
           {tag.name}:
