@@ -212,7 +212,6 @@ const GlassesContextProvider = ({ children }) => {
         hasMoreItems,
         initialGridItemsRendered,
         handleNavOptions,
-        // currentCategoryItemsCounter,
         currentCategory,
         cartItems,
         addToCart

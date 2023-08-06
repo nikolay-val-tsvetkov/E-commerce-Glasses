@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <div className='flex flex-col items-center sm:flex-row text-xs md:text-sm bg-slate-50/90 justify-around'>
-      <Image src='/logo.jpg' className='hidden md:block' alt='Glasses Logo' width='200' height='30' />
+      <Image src='/logo-2.jpg' className='hidden md:block py-4' alt='Glasses Logo' width='130' height='20' />
       <nav>
         <ul className='flex flex-col sm:flex-row'>
           {menuLinks.map(

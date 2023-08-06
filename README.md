@@ -30,7 +30,7 @@ It's fast, flexible, and reliable — with zero-runtime.</p>
 
 <h3>3. Price Slider</h3>
 
-<p>Implementing the price slider for filtering products based on price range was another struggle I encountered. I initially attempted to create it by myself, nut it wasn't successfully and I opted to use a library.</p>
+<p>Implementing the price slider for filtering products based on price range was another struggle I encountered. I initially attempted to create it by myself, but the try wasn't successful and I opted to use a library.</p>
 
 <h3>4. Stars Rating Component</h3>
 

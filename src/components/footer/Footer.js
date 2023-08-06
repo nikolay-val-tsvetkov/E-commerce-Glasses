@@ -12,6 +12,11 @@ const Footer = () => {
         </a>
       </div>
       <div>
+        <a href='https://e-commerce-glasses.vercel.app/' target='_blank'>
+          Vercel Deploy
+        </a>
+      </div>
+      <div>
         <a href='https://nikolay-val-tsvetkov.github.io/E-commerce-Glasses/' target='_blank'>
           GitHub Pages
         </a>
