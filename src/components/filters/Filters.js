@@ -33,7 +33,7 @@ const filterTags = [
   },
   {
     name: 'frameColor',
-    options: ['all', 'gold', 'pink', 'silver', 'black', 'brown', 'green']
+    options: ['all', 'gold', 'lightblue', 'silver', 'pink', 'silver', 'black', 'brown', 'green', 'silver']
   }
 ]
 

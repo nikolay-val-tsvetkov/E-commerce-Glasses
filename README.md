@@ -18,6 +18,24 @@ Tailwind -  <p>Tailwind CSS works by scanning all of your HTML files, JavaScript
 It's fast, flexible, and reliable — with zero-runtime.</p>
 <a href="https://tailwindcss.com/">Tailwind Documentation</a>
 
+<h2>Struggles with the Code</h2>
+
+<h3>1. Using Images with Next.js</h3>
+
+<p>One of the main struggles I faced in this project was working with images in Next.js. Next.js has its own optimized image component called <b>Image</b>.</p>
+
+<h3>2. Designing the Main Grid</h3>
+
+<p>Designing the main grid layout for the e-commerce website also posed some challenges. I needed to create a responsive grid that works well across various screen sizes.</p>
+
+<h3>3. Price Slider</h3>
+
+<p>Implementing the price slider for filtering products based on price range was another struggle I encountered. I initially attempted to create it by myself, nut it wasn't successfully and I opted to use a library.</p>
+
+<h3>4. Stars Rating Component</h3>
+
+<p>The stars rating component for displaying product ratings and user reviews was a feature that I wanted to implement but ran out of time to complete. I started working on Star component that could render the appropriate number of stars based on the product's rating.</p>
+
 ## Author
 
 Nikolay Tsvetkov

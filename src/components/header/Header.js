@@ -1,38 +1,36 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { useGlassesContext } from '@/app/contexts/productsContext'
 import { cartIcon } from '../../../public/helpers/icons'
 
 const menuLinks = [
   {
     title: 'Sunglasses',
-    link: '/'
+    option: 'sunglasses'
   },
   {
     title: 'Eyeglasses',
-    link: '/'
+    option: 'eyeglasses'
   },
   {
     title: 'Promotions',
-    link: '/'
+    option: 'discount',
+    filterBy: 'promotions'
   }
 ]
 export default function Header() {
   const { handleNavOptions, cartItems } = useGlassesContext()
 
   return (
-    <div className='flex flex-col sm:flex-row text-xs md:text-sm bg-slate-50 justify-around'>
+    <div className='flex flex-col items-center sm:flex-row text-xs md:text-sm bg-slate-50/90 justify-around'>
       <Image src='/logo.jpg' className='hidden md:block' alt='Glasses Logo' width='200' height='30' />
       <nav>
         <ul className='flex flex-col sm:flex-row'>
           {menuLinks.map(
-            ({ title, link }) =>
+            ({ title, option, filterBy }) =>
               title &&
-              link && (
-                <li key={title} className='p-2 sm:p-6'>
-                  <Link href={link} onClick={() => handleNavOptions(title)}>
-                    {title}
-                  </Link>
+              option && (
+                <li key={title} className='p-2 sm:p-6 cursor-pointer' onClick={() => handleNavOptions(option, filterBy)}>
+                  {title}
                 </li>
               )
           )}

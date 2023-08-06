@@ -45,12 +45,28 @@ const initialStatteFilterTags = [
 ]
 const initialGridItemsRendered = 12
 
+const descriptions = {
+  sunglasses: {
+    title: 'Our Sunglasses Fashionable Shades',
+    description:
+      'The Sunglasses on our e-commerce site are stylish and protective, designed to shield the eyes from harmful UV rays and glare, offering customers a wide selection of fashionable frames and lens options for various outdoor activities and fashion preferences.'
+  },
+  eyeglasses: {
+    title: 'Our Trendy Frames',
+    description:
+      'The Eyeglasses on an e-commerce site are vision-correcting optical devices that enhance visual acuity for individuals with refractive errors like nearsightedness, farsightedness, and astigmatism. Customers can find a diverse range of stylish frames and prescription options, tailored to their unique needs and personal style preferences.'
+  },
+  discount: {
+    title: 'Our Fantastic Promotions',
+    description: 'Our promotions go from 10 to 50 %'
+  }
+}
+
 const GlassesContextProvider = ({ children }) => {
   const [minPrice, setMinPrice] = useState(0)
   const [maxPrice, setMaxPrice] = useState(4000)
   const [glassesData, setGlassesData] = useState([])
-  const [currentCategoryItemsCounter, setcurrentCategoryItemsCounter] = useState(0)
-  const [currentCategory, setCurrentCategory] = useState('')
+  const [currentCategory, setCurrentCategory] = useState(descriptions.sunglasses)
   const [cartItems, setCartItems] = useState([])
 
   const [filter, setFilter] = useState({
@@ -58,18 +74,14 @@ const GlassesContextProvider = ({ children }) => {
     color: 'all',
     shape: 'all',
     material: 'all',
-    frameColor: 'all'
+    frameColor: 'all',
+    type: 'sunglasses'
   })
   const [filterTags, setFilterTags] = useState(initialStatteFilterTags)
   const [sort, setSort] = useState('default')
   const [hasMoreItems, setHasMoreItems] = useState(true)
 
   const addToCart = (item) => setCartItems((prevCartItems) => [...prevCartItems, item])
-
-  useEffect(() => {
-    const initialData = glasses.glasses.slice(0, initialGridItemsRendered)
-    setGlassesData(initialData)
-  }, [])
 
   useEffect(() => {
     const applyFilter = () => {
@@ -166,33 +178,18 @@ const GlassesContextProvider = ({ children }) => {
 
     setGlassesData((prevData) => [...prevData, ...newData])
   }
-  const handleNavOptions = (option) => {
-    let filteredGlasses = []
-    if (option === 'Sunglasses') {
-      filteredGlasses = glasses.glasses.filter((item) => {
-        return item.type === 'sunglasses'
-      })
-      setcurrentCategoryItemsCounter(filteredGlasses.length)
-      setCurrentCategory(option)
-      setGlassesData(filteredGlasses)
-    } else if (option === 'Eyeglasses') {
-      filteredGlasses = glasses.glasses.filter((item) => {
-        return item.type === 'eyeglasses'
-      })
-      setcurrentCategoryItemsCounter(filteredGlasses.length)
-      setCurrentCategory(option)
-      setGlassesData(filteredGlasses)
-    } else if (option === 'Promotions') {
-      filteredGlasses = glasses.glasses.filter((item) => {
-        return item?.discount && item
-      })
 
-      setGlassesData(filteredGlasses)
-      setCurrentCategory(option)
-      setcurrentCategoryItemsCounter(filteredGlasses.length)
-    } else {
-      return null
+  const handleNavOptions = (option, filterBy) => {
+    setCurrentCategory(() => descriptions[option])
+    if (filterBy === 'promotions') {
+      const filteredGlasses = glasses.glasses.filter((item) => item?.discount && item)
+      return setGlassesData(() => filteredGlasses)
     }
+
+    setFilter((prevFilter) => ({
+      ...prevFilter,
+      type: option
+    }))
   }
 
   return (
@@ -215,7 +212,7 @@ const GlassesContextProvider = ({ children }) => {
         hasMoreItems,
         initialGridItemsRendered,
         handleNavOptions,
-        currentCategoryItemsCounter,
+        // currentCategoryItemsCounter,
         currentCategory,
         cartItems,
         addToCart

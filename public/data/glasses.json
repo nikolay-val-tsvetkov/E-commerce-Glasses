@@ -38,11 +38,10 @@
       "frameColor": "gold",
       "glassColor": "orange",
       "description": "Stylish retro round eyeglasses with gold frame.",
-      "price": 45.99,
+      "price": 545.99,
       "shape": "round",
       "image": "https://example.com/eyeglasses2.jpg",
-      "imageSrc": "/golden_glasses.jpg",
-      "discount": 70
+      "imageSrc": "/golden_glasses.jpg"
     },
     {
       "id": 4,
@@ -53,7 +52,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Sleek wrap sunglasses perfect for outdoor activities.",
-      "price": 34.99,
+      "price": 1734.99,
       "shape": "rectangular",
       "image": "https://example.com/sunglasses2.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -67,7 +66,7 @@
       "frameColor": "blue",
       "glassColor": "orange",
       "description": "Contemporary square-shaped eyeglasses with blue frame.",
-      "price": 38.99,
+      "price": 838.99,
       "shape": "square",
       "image": "https://example.com/eyeglasses3.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -81,7 +80,7 @@
       "frameColor": "silver",
       "glassColor": "green",
       "description": "Classic aviator sunglasses with green lenses.",
-      "price": 56.99,
+      "price": 656.99,
       "shape": "square",
       "image": "https://example.com/sunglasses3.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -145,14 +144,14 @@
     },
     {
       "id": 11,
-      "name": "Trendy Transparent Eyeglasses",
+      "name": "Contemporary Lucid Eyeglasses",
       "type": "eyeglasses",
       "material": "acetate",
       "brand": "GeometricSpecs",
       "frameColor": "silver",
       "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
-      "price": 41.99,
+      "price": 201.98,
       "shape": "round",
       "image": "https://example.com/eyeglasses6.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -238,6 +237,7 @@
       "glassColor": "orange",
       "description": "Unique geometric-shaped eyeglasses with silver frame.",
       "price": 43.99,
+      "discount": "22",
       "shape": "cat-eye",
       "image": "https://example.com/eyeglasses9.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -283,7 +283,7 @@
       "price": 49.99,
       "shape": "round",
       "image": "https://example.com/sunglasses10.jpg",
-      "imageSrc": "/sunglassess.jpg"
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 21,
@@ -343,14 +343,14 @@
     },
     {
       "id": 25,
-      "name": "Trendy Transparent Eyeglasses",
+      "name": "Trendy Transparent Eyeglasses 5",
       "type": "eyeglasses",
       "material": "acetate",
       "brand": "VisionPro",
       "frameColor": "transparent",
       "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
-      "price": 41.99,
+      "price": 51.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses13.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -381,7 +381,8 @@
       "price": 47.99,
       "shape": "round",
       "image": "https://example.com",
-      "imageSrc": "/golden_glasses.jpg"
+      "imageSrc": "/golden_glasses.jpg",
+      "discount": 70
     },
     {
       "id": 28,
@@ -392,7 +393,7 @@
       "frameColor": "black",
       "glassColor": "grey",
       "description": "Sleek polarized wrap sunglasses with grey lenses.",
-      "price": 44.99,
+      "price": 2544.99,
       "shape": "wraparound",
       "image": "https://example.com/sunglasses14.jpg",
       "imageSrc": "/sunglasses2.jpg"
@@ -479,7 +480,7 @@
       "price": 49.99,
       "shape": "round",
       "image": "https://example.com/sunglasses17.jpg",
-      "imageSrc": "/sunglassess.jpg"
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 35,
@@ -490,7 +491,7 @@
       "frameColor": "brown",
       "glassColor": "orange",
       "description": "Timeless brown eyeglasses suitable for any occasion.",
-      "price": 38.99,
+      "price": 2638.99,
       "shape": "oval",
       "image": "https://example.com/eyeglasses18.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -539,14 +540,14 @@
     },
     {
       "id": 39,
-      "name": "Trendy Transparent Eyeglasses",
+      "name": "Smile Trendy Transparent Eyeglasses",
       "type": "eyeglasses",
       "material": "acetate",
       "brand": "SeeThrough",
       "frameColor": "transparent",
       "glassColor": "orange",
       "description": "Modern transparent-framed eyeglasses with clear lenses.",
-      "price": 41.99,
+      "price": 38.75,
       "shape": "oval",
       "image": "https://example.com/eyeglasses20.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -738,7 +739,7 @@
     },
     {
       "id": 53,
-      "name": "Trendy Transparent Eyeglasses",
+      "name": "Fashionable See-Through Glasses",
       "type": "eyeglasses",
       "material": "acetate",
       "brand": "ModaSpecs",
@@ -802,7 +803,8 @@
       "frameColor": "brown",
       "glassColor": "orange",
       "description": "Vintage-inspired round eyeglasses with brown frame.",
-      "price": 40.99,
+      "price": 340.99,
+      "discount": "11",
       "shape": "round",
       "image": "https://example.com/eyeglasses29.jpg",
       "imageSrc": "/Glasses_black.jpg"
@@ -876,7 +878,7 @@
       "price": 49.99,
       "shape": "round",
       "image": "https://example.com/sunglasses31.jpg",
-      "imageSrc": "/sunglassess.jpg"
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 63,
@@ -936,7 +938,7 @@
     },
     {
       "id": 67,
-      "name": "Trendy Transparent Eyeglasses",
+      "name": "Modern Transparent Spectacles",
       "type": "eyeglasses",
       "material": "acetate",
       "brand": "ActiveWear",
@@ -1073,7 +1075,7 @@
       "price": 349.99,
       "shape": "round",
       "image": "https://example.com/sunglasses38.jpg",
-      "imageSrc": "/sunglassess.jpg"
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 77,
@@ -1133,7 +1135,7 @@
     },
     {
       "id": 81,
-      "name": "Trendy Transparent Eyeglasses",
+      "name": "Chic Translucent Eyewear",
       "type": "eyeglasses",
       "material": "acetate",
       "brand": "VisionPro",
@@ -1269,7 +1271,7 @@
       "price": 49.99,
       "shape": "round",
       "image": "https://example.com/sunglasses45.jpg",
-      "imageSrc": "/sunglassess.jpg"
+      "imageSrc": "/sunglasses2.jpg"
     },
     {
       "id": 91,

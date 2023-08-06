@@ -32,7 +32,7 @@ body {
   --background-end-rgb: 204, 255, 204;
 
   color: rgb(var(--foreground-rgb));
-  height: 400vh;
+  height: 100vh;
   background: linear-gradient(to right, rgb(var(--background-start-rgb)), rgb(var(--background-mid-rgb)), rgb(var(--background-end-rgb)));
 }
 

@@ -1,11 +1,13 @@
 import { useGlassesContext } from '@/app/contexts/productsContext'
+
 export default function Category() {
-  const { currentCategory, currentCategoryItemsCounter } = useGlassesContext()
+  const { glassesData, currentCategory } = useGlassesContext()
 
   return (
     <>
-      <div>{currentCategory}</div>
-      <div>{currentCategoryItemsCounter}</div>
+      <div className='capitalize text-bold'>{currentCategory?.title}</div>
+      <div className='text-gray-600 italic text-xs sm:text-sm'>{currentCategory?.description}</div>
+      <div> {'(' + glassesData.length + ')'}</div>
     </>
   )
 }
