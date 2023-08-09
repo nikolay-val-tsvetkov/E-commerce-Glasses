@@ -182,6 +182,10 @@ const GlassesContextProvider = ({ children }) => {
   const handleNavOptions = (option, filterBy) => {
     setCurrentCategory(() => descriptions[option])
     if (filterBy === 'promotions') {
+      setFilter((prevFilter) => ({
+        ...prevFilter,
+        type: 'all'
+      }))
       const filteredGlasses = glasses.glasses.filter((item) => item?.discount && item)
       return setGlassesData(() => filteredGlasses)
     }
